@@ -1,3 +1,2 @@
 #!/bin/bash
 gcc CFILE=main.c -o c | cat c
-
