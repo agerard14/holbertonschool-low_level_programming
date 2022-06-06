@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- *main = starting point for program execution.
- *retur = retorna una funcion correcta
+ *main - Entry point
+ *return: always 0 (success)
  */
+
 int main(void)
 {
-	puts("\n"Programming is like building a multilingual puzzle");
-
-	return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return(0);
 }
