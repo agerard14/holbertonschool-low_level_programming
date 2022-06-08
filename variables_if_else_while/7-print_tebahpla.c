@@ -1,21 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Prints all avaliable numbers in base 10
+ * main - Prints the alphabet in lowercase also in backwards
  *
- * Description: Prints all single digit numbers of base 10 starting from 0
- * followed by a new line
+ * Description: Prints the alphabet in lowercase also in backwards
+ * followed by a new line.
  *
  * Return: Always return 0
  */
 
 int main(void)
 {
-	int i;
+	char alphabet = 'z';
 
-	for (i = 48; i <= 57; i++)
+	while (alphabet >= 'a')
 	{
-		putchar(i);
+		putchar(alphabet);
+		alphabet--;
 	}
 
 	putchar(10);
