@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Indicates if a random number is positive or negative
+ * main - Prints the alphabet in lowercase
  *
- * Description: Generates a random number.
- *   indicates if it's positive or negative
+ * Description: Prints the alphabet in lowercase, followed by a new line.
  *
- * Return: 0
+ * Return: Always return 0
  */
 
-int main(void) {
-  char alphabet = 'a';
+int main(void)
+{
+	char alphabet = 'a';
 
-  
-  while (alphabet <= 'z')
-    {
-      putchar(alphabet);
-      alphabet++;
-    }
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
 
-  putchar(10);
-  return(0);
+	putchar(10);
+	return (0);
 }
