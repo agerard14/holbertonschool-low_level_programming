@@ -8,26 +8,26 @@
  * Return: void
  */
 
-void print_to_98(int num)
+void print_to_98(int n)
 {
 	int i;
 
-	if (num > 98)
+	if (n > 98)
 	{
-		for (i = num; i > 98; i--)
+		for (i = n; i > 98; i--)
 		{
 			printf("%d, ", i);
 		}
 	}
-	else if (num < 98)
+	else if (n < 98)
 	{
-		for (i = num; i < 98; i++)
+		for (i = n; i < 98; i++)
 		{
 			printf("%d, ", i);
 		}
 	}
 
-	if (i == 98 || num == 98)
+	if (i == 98 || n == 98)
 	{
 		printf("%d", 98);
 	}
