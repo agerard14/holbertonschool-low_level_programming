@@ -4,7 +4,7 @@
 /**
  * print_to_98 - Prints all natural numbers from n to 98
  *
- * @num: delimiter (decides if the iterator add or substract)
+ * @n: delimiter (decides if the iterator add or substract)
  *
  * Return: void
  */
