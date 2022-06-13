@@ -17,5 +17,4 @@ int mul(int a, int b)
 
 	operacion = a * b;
 	return (operacion);
-  
 }
