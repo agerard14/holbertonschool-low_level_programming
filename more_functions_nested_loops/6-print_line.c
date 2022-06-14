@@ -1,31 +1,23 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line on the terminal.
+ * print_line - draws a straight line in the terminal.
  *
- * @n: ampount of "\"
+ * @n: ampount of "_"
  *
  * Return: Void
  */
 
-void print_diagonal(int n)
+void print_line(int n)
 {
-	int i, j;
-
-	if (n > 1)
+	int line = 0;
+	if (n > 0)
 	{
-		for (i = 0; i < n; i++)
+		while (line < n)
 		{
-			for (j = 0; j < i; j++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\\');
-			_putchar('\n');
+			_putchar('_');
+			line++;
 		}
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	_putchar(10);
 }
