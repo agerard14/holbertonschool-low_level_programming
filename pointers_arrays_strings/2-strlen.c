@@ -1,16 +1,22 @@
 #include "main.h"
 
 /**
- * mul - Multiply 2 numbers.
+ * _strlen - Returns the length of a string.
  *
- * @a: number
+ * @s: pointer to an first letter of a string.
  *
- * @b: number
- *
- * Return: The product of the multiply of 2 numbers.
+ * Return: The length of an string
  */
 
-int mul(int a, int b)
+int _strlen(char *s)
 {
-	return (a * b);
+	int size = 0;
+
+	while (*s != '\0')
+	{
+		size++;
+		s++;
+	}
+
+	return (size);
 }
