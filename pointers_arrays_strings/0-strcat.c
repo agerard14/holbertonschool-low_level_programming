@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strcat - concatenates two string
@@ -8,25 +7,22 @@
  *
  * @src: string to add in the string-base.
  *
- * Return: Dest
+ * Return: Void
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int n1;
-	int n2;
+	int size_dest, iterator_src;
 
-	n1 = 0;
+	for (size_dest = 0; *(dest + size_dest) != '\0'; size_dest++)
+		;
 
-	while (*(dest + n1) != '\0')
+	for (iterator_src = 0; *(src + iterator_src) != '\0'; iterator_src++)
 	{
-		n1++;
+		*(dest + size_dest + iterator_src) = *(src + iterator_src);
 	}
-	for (n2 = 0; *(src + n2) != '\0' ; n2++, n1++)
-	{
-		*(dest + n1) = *(src + n2);
-	}
-	(dest + n1) = '\0';
 
-	return  (dest);
+	*(dest + size_dest + iterator_src + 1) = '\0';
+
+	return (dest);
 }
