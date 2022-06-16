@@ -22,12 +22,11 @@ char *_strcat(char *dest, char *src)
 	{
 		n1++;
 	}
-	for (n2 = 0; *(src + n2) != '\0';n2++,n1++)
+	for (n2 = 0; *(src + n2) != '\0' ; n2++, n1++)
 	{
 		*(dest + n1) = *(src + n2);
 	}
-  
-	*(dest + n1) = '\0';
+	(dest + n1) = '\0';
 
 	return  (dest);
 }
