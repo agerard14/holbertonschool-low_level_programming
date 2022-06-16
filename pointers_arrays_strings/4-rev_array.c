@@ -1,28 +1,29 @@
 #include "main.h"
 
 /**
- * _strcmp - Compare a string with another
+ * reverse_array - Modify an array
  *
- * @s1: string.
+ * @a: pointer to an array of numbers.
  *
- * @s2: string.
+ * @n: number of elements of array.
  *
  * Return: Void
  */
 
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
-	int i;
-	int result = 0;
+	int i, tmp, size;
 
-	for (i = 0; *(s1 + i) != '\0' && *(s2 + i) != '\0'; i++)
+	i = 0;
+	size = n;
+	n--;
+
+	while (i < size / 2)
 	{
-		if (*(s1 + i) != *(s2 + i))
-		{
-			result = *(s1 + i) - *(s2 + i);
-			break;
-		}
+		tmp = a[i];
+		a[i] = a[n];
+		a[n] = tmp;
+		i++;
+		n--;
 	}
-
-	return (result);
 }
