@@ -15,7 +15,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int iterador = 0;
-  	unsigned int n1, n2, n3;
+	unsigned int n1, n2, n3;
 
 	for (n1 = 0; s[n1]; n1++)
 	{
