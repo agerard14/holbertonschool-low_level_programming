@@ -12,7 +12,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	for (int i = 0; i < argc; i++)
-		printf("argv[%d] = %s\n", i, argv[i]);
-	exit(EXIT_SUCCESS);
+		printf("%s\n", argv[0]);
+		return (0);
 }
